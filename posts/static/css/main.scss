@@ -1,0 +1,65 @@
+:root {
+    --bg: #ebe8e8e3;
+    --black: #121212;
+    --blackv:rgba(18, 18, 18, 0.185);
+    --pdx: 4em;
+    --accent: #E9602C;
+    --white: #F4F4F4;
+}
+
+@font-face {
+    font-family: pop;
+    src: url("./fonts/Poppins-Regular.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: urba;
+    src: url("./fonts/Urbanist-Regular.ttf");
+    font-display: swap;
+}
+
+body {
+    background-color: var(--black);
+    background-image: linear-gradient(to top right, var(--black), #ff950011);
+    height: 100vh;
+}
+
+.linear {
+    background-image: linear-gradient(to top right, var(--black), #ff950011);
+}
+
+.line {
+    line-height: 1.2em;
+}
+
+.pop {
+    font-family: pop, sans-serif;
+}
+
+.urba {
+    font-family: urba;
+}
+
+.title {
+    color: var(--white);
+    font-size: 4rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+
+h1 span {
+    font-size: 1.5rem;
+}
