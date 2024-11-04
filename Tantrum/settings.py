@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "posts",
+    "drf_spectacular",
 ]
 
 MIDDLEWARE = [
@@ -122,3 +123,13 @@ STATIC_URL = "/static/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+REST_FRAMEWORK = {"DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema"}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Tantrum",
+    # "DESCRIPTION": "Your project description",
+    # "VERSION": "1.0.0",
+    # "SERVE_INCLUDE_SCHEMA": False,
+    # OTHER SETTINGS
+}
