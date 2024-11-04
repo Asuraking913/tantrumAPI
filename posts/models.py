@@ -8,6 +8,7 @@ class Posts(models.Model):
         max_length=255, primary_key=True, null=False, blank=False, default=generate_id
     )
     post_email = models.EmailField()
+    content = models.TextField(blank=True)
     time = models.DateTimeField(auto_now_add=True)
 
 
@@ -16,4 +17,5 @@ class Comments(models.Model):
         max_length=255, primary_key=True, null=False, blank=False, default=generate_id
     )
     comment_email = models.EmailField()
+    content = models.TextField(blank=True)
     time = models.DateTimeField(auto_now_add=True)
